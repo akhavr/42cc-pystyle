@@ -30,8 +30,8 @@ setup(
                  'GNU General Public License v2 (GPLv2)'],
     keywords='docstrings, flake8',
     entry_points={'flake8.extension': [
-        '42cc = test_docstrings:TestDocstrings',
+        '42cc = 42cc_pystyle.test_docstrings:TestDocstrings',
         ], },
     install_requires=['flake8'],
-    py_modules=['test_docstrings'],
+    py_modules=['42cc_pystyle'],
 )
