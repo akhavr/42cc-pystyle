@@ -34,4 +34,6 @@ setup(
         ], },
     install_requires=['flake8'],
     py_modules=['42cc_pystyle'],
+    test_suite='nose.collector',
+    setup_requires=['nose>=1.0'],
 )
