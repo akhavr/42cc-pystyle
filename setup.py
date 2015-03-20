@@ -12,7 +12,7 @@ def get_long_description():
 
 setup(
     name="42cc-pystyle",
-    version="0.0.4",
+    version="0.0.5",
     description="flake8 checks for 42 Coffee Cups style guide",
     long_description=get_long_description(),
     license=open('LICENSE').read(),
@@ -33,7 +33,7 @@ setup(
         '42cc = 42cc_pystyle.test_docstrings:TestDocstrings',
         ], },
     install_requires=['flake8'],
-    py_modules=['42cc_pystyle'],
+    packages=['42cc_pystyle'],
     test_suite='nose.collector',
     setup_requires=['nose>=1.0'],
 )
