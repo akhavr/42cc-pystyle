@@ -12,7 +12,7 @@ def get_long_description():
 
 setup(
     name="42cc-pystyle",
-    version="0.0.8",
+    version="0.0.9",
     description="flake8 checks for 42 Coffee Cups style guide",
     long_description=get_long_description(),
     license=open('LICENSE').read(),
