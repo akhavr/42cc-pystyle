@@ -31,6 +31,7 @@ setup(
     keywords='docstrings, flake8',
     entry_points={'flake8.extension': [
         '42cc = 42cc_pystyle.test_docstrings:TestDocstrings',
+        '42cc = 42cc_pystyle.test_len_function.TestLenFunction',
         ], },
     install_requires=['flake8'],
     packages=['42cc_pystyle'],
