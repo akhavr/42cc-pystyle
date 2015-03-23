@@ -5,14 +5,14 @@ from setuptools import setup
 
 def get_long_description():
     descr = []
-    for fname in ('README.md', ):
+    for fname in ('README', ):
         with open(fname) as f:
             descr.append(f.read())
     return '\n\n'.join(descr)
 
 setup(
     name="42cc-pystyle",
-    version="0.0.6",
+    version="0.0.7",
     description="flake8 checks for 42 Coffee Cups style guide",
     long_description=get_long_description(),
     license=open('LICENSE').read(),
