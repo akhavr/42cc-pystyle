@@ -12,7 +12,7 @@ def get_long_description():
 
 setup(
     name="42cc-pystyle",
-    version="0.0.9",
+    version="0.0.10',
     description="flake8 checks for 42 Coffee Cups style guide",
     long_description=get_long_description(),
     license=open('LICENSE').read(),
@@ -30,8 +30,8 @@ setup(
                  'GNU General Public License v2 (GPLv2)'],
     keywords='docstrings, flake8',
     entry_points={'flake8.extension': [
-        '42cc = 42cc_pystyle.test_docstrings:TestDocstrings',
-        '42cc = 42cc_pystyle.test_len_function.TestLenFunction',
+        '42cc1 = 42cc_pystyle.test_docstrings:TestDocstrings',
+        '42cc2 = 42cc_pystyle.test_len_function.TestLenFunction',
         ], },
     install_requires=['flake8'],
     packages=['42cc_pystyle'],
