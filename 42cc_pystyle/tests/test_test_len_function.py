@@ -9,10 +9,12 @@ T = test_len_function.TestLenFunction
 
 
 def test_short_function():
+    'short function should pass'
     assert list(T(ast.parse('def func(): pass')).run()) == []
 
 
 def test_long_function():
+    'Very long function should fail'
     f = '\n'.join(['def f():'] + ['    x = 1']*50)
     msg = list(T(ast.parse(f)).run())
     assert msg == [

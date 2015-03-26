@@ -9,10 +9,12 @@ T = test_single_if.TestSingleIf
 
 
 def test_ok_function():
+    'simple function should be ok'
     assert list(T(ast.parse('def func(): pass')).run()) == []
 
 
 def test_singleif_function():
+    'function with a single `if` should fail'
     f = '''def f():
     if True:
         pass
@@ -24,6 +26,7 @@ def test_singleif_function():
 
 
 def test_twoif_function():
+    'function longer than a single if, should be ok'
     f = '''def f():
     if True:
         pass
