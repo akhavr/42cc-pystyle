@@ -16,7 +16,10 @@ def commentedcode(physical_line, tokens):
     for token_type, text, start_index, _, _ in tokens:
         if token_type == tokenize.COMMENT:
             try:
-                ast.parse(text[1:].lstrip())
+                code = ast.parse(text[1:].lstrip())
+                if len(code.body) == 1 and isinstance(code.body[0],
+                                                      ast.Expr):
+                    continue  # that's a simple one-word comment
                 return start_index[1], '42cc4: Commented out code'
             except Exception:
                 continue

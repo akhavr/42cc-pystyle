@@ -28,3 +28,14 @@ def test_commentedcode():
     tokens = tokenize.generate_tokens(StringIO.StringIO(code).readline)
     msg = T(code, tokens)
     assert msg == (4, '42cc4: Commented out code'), msg
+
+
+def test_code_with_comments():
+    'code contains end-of-line comments'
+    code = '''def f():  # lets do it
+    def nested():  # shortcut
+      pass
+'''
+    tokens = tokenize.generate_tokens(StringIO.StringIO(code).readline)
+    msg = T(code, tokens)
+    assert msg is None, msg
