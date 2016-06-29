@@ -35,7 +35,7 @@ setup(
         '42cc3 = 42cc_pystyle.test_single_if:TestSingleIf',
         '42cc4 = 42cc_pystyle.test_comments:commentedcode',
         ], },
-    install_requires=['flake8'],
+    install_requires=['flake8==2.6.2'],
     packages=['42cc_pystyle'],
     test_suite='nose.collector',
     setup_requires=['nose>=1.0'],
