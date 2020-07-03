@@ -1,6 +1,9 @@
 # 42cc-pystyle
 flake8 plugins for 42 Coffee Cups style checks
 
+- 0.0.7
+flake8 version bump to 3.8.3
+
 - 0.0.6
 fixed flake8 warnings :)
 
