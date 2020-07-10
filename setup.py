@@ -15,6 +15,7 @@ setup(
     version="0.0.17",
     description="flake8 checks for 42 Coffee Cups style guide",
     long_description=get_long_description(),
+    long_description_content_type='text/markdown',
     license=open('LICENSE').read(),
     author='Andriy Khavryuchenko',
     author_email='akhavr@khavr.com',
